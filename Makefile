@@ -4,13 +4,13 @@ CXXFLAGS = -Wall -Wextra -std=c++17 -O2
 # enables common warnings, enables extra warnings, compiles using cpp17 standard, turns on compiler optimization level 2
 
 # final exe file name
-TARGET = lab_five
+TARGET = main
 
 # default target when running make
 all: $(TARGET)
 
 # Source files
-SRCS = matrices.cpp
+SRCS = main.cpp
 
 # Object files
 OBJECTS = $(SRCS:.cpp=.o)
@@ -26,6 +26,6 @@ $(TARGET): $(OBJECTS)
 	$(CC) $(CFLAGS) -c $< -o $@
 # $< = first prerequisite file (i.e. matrices.cpp)
 
-# remove .o files and both executables
+# remove .o file and executable
 clean:
-	rm -rf *.o $(TARGET)
+	rm -f *.o $(TARGET)
