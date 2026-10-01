@@ -1,6 +1,6 @@
 # compiler and flags
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17 -O2
+CXXFLAGS = -Wall -Wextra -std=c++17 -Wc++11-extensions -O2
 # enables common warnings, enables extra warnings, compiles using cpp17 standard, turns on compiler optimization level 2
 
 # final exe file name
